@@ -38,6 +38,7 @@ limitations under the License.
   </head>
   <body>
 	<DIV id="message">Talk to me</DIV>
+    <iframe style="width: 100%" src="http://stittch.wix.com/photo-portfolio"></iframe>
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
     <script type="text/javascript">
       window.onload = function() {
@@ -94,7 +95,7 @@ limitations under the License.
       // utility function to display the text message in the input field
       function displayText(text) {
         console.log(text);
-        document.getElementById("message").innerHTML=text;
+        document.getElementById("message").src=text;
         window.castReceiverManager.setApplicationState(text);
       };
     </script>
